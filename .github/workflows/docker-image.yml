@@ -12,7 +12,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-  VERSION: 0.4.2
+  VERSION: 0.4.8
 
 jobs:
   build-and-push-image:
