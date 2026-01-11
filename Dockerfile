@@ -7,7 +7,7 @@ RUN apk --no-cache add curl unzip
 RUN echo $TARGETPLATFORM
 RUN case "$TARGETPLATFORM" in \
   "linux/arm64") ARCH=aarch64-unknown-linux-musl ;; \
-  "linux/amd64") ARCH=x86_64-unknown-linux-musl ;; \
+  "linux/amd64") ARCH=x86_64-unknown-linux-gnu ;; \
   *) exit 1 ;; \
   esac && \
   URL=https://github.com/rapiz1/rathole/releases/download/v${VERSION}/rathole-${ARCH}.zip && \
